@@ -9,10 +9,7 @@ var msearchBg1232 = document.getElementById('msearchBg1232');
 msearchBg1232.insertAdjacentHTML("afterEnd", '<div id="appPrsearch" style="display:none;"></div>');
 
 (function (w, d, u2, u3, u) {
-    var s = d.createElement('script');
-    s.async = true;
-    s.src = u + '?' + (Date.now() / 60000 | 0);
-    s.setAttribute('id', 'appPrsearchScript');
+    
 
     // s.setAttribute('data-tov_layout', 'list');
     s.setAttribute('data-tov_layout', 'grid');
