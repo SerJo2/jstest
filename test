@@ -6,10 +6,33 @@ document.querySelector('.t-site-search-input').addEventListener('mousedown', fun
 document.body.insertAdjacentHTML("afterbegin", '<div id="msearchBg1232" style="display:none;"></div>');
 
 var msearchBg1232 = document.getElementById('msearchBg1232');
-msearchBg1232.insertAdjacentHTML("afterEnd", '<div id="appPrsearch" style="display:none;"></div>');
+msearchBg1232.insertAdjacentHTML("afterEnd", '<div id="appPrsearch" style=""></div>');
 
 (function (w, d, u2, u3, u) {
-    
+    var s = d.createElement('script');
+    s.async = true;
+    s.src = u + '?' + (Date.now() / 60000 | 0);
+    s.setAttribute('id', 'appPrsearchScript');
+
+    // s.setAttribute('data-tov_layout', 'list');
+    s.setAttribute('data-tov_layout', 'grid');
+    s.setAttribute('data-tov_fprev', 1);
+
+    var h = d.getElementsByTagName('script')[0];
+    h.parentNode.insertBefore(s, h);
+    var s2 = d.createElement('link');
+    s2.href = u2 + '?' + (Date.now() / 60000 | 0);
+    s2.rel = 'stylesheet';
+    s2.type = 'text/css';
+    var h2 = d.getElementsByTagName('link')[0];
+    h2.parentNode.insertBefore(s2, h2);
+
+    var s3 = d.createElement('link');
+    s3.href = u3 + '?' + (Date.now() / 60000 | 0);
+    s3.rel = 'stylesheet';
+    s3.type = 'text/css';
+    var h3 = d.getElementsByTagName('link')[0];
+    h3.parentNode.insertBefore(s3, h3);
 })(window, document, 'https://i.msearch.space/app/63368d332760f0b78fd4cf813e50de15/app.css','https://i.msearch.space/app/63368d332760f0b78fd4cf813e50de15/main.css','https://i.msearch.space/app/63368d332760f0b78fd4cf813e50de15/app.js');
 
 // Удаление фона
