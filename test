@@ -3,10 +3,10 @@ document.querySelector('.t-site-search-input').addEventListener('mousedown', fun
     document.querySelector('#appPrsearch').style.display = "block";
     setTimeout(() => {document.getElementsByClassName("search_input")[0].focus();window.scrollTo(0, 0);}, 500);
 }, false);
-document.body.insertAdjacentHTML("afterbegin", '<div id="msearchBg1232" style="display:none;"></div>');
+
 
 var msearchBg1232 = document.getElementById('msearchBg1232');
-msearchBg1232.insertAdjacentHTML("afterEnd", '<div id="appPrsearch" style=""></div>');
+msearchBg1232.insertAdjacentHTML("afterEnd", '<div id="appPrsearch" style="display:none;"></div>');
 
 (function (w, d, u2, u3, u) {
     var s = d.createElement('script');
